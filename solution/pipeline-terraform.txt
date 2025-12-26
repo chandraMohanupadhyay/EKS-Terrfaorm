@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AWS_REGION      = 'ap-south-1'
+        AWS_REGION      = 'us-east-1'
         CLUSTER_NAME    = 'demo-cluster'
         NODE_KEY        = 'ap-linux-kp'
         DOCKERHUB_CREDS = 'dockerhub'
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/jsachdev07/tf-eks-ci-cd.git'
+                git 'https://github.com/chandraMohanupadhyay/EKS-Terrfaorm.git'
             }
         }
 

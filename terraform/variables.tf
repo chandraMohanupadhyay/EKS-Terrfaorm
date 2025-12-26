@@ -5,7 +5,7 @@ variable "node_key" {
 
 variable "region" {
   description = "AWS region"
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "cluster_name" {
